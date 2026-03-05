@@ -1,0 +1,38 @@
+---
+description: Best practices and production-ready code quality for all tasks
+alwaysApply: true
+---
+
+# Production-Ready Code Quality (Guidance Only)
+
+**Priority: complete the task.** Use these as guidance when they don’t block progress. Don’t get stuck on perfection.
+
+## Structure & Organization
+
+- Prefer one clear purpose per file/function/component when it’s easy to do.
+- Use consistent naming (PascalCase components, camelCase for functions/variables) where you’re already touching that code.
+- Remove obvious dead code (unused imports, commented blocks) only if it’s quick.
+
+## Code Quality
+
+- Prefer readable, obvious code over clever solutions.
+- Add error handling when it’s straightforward; skip if it would delay finishing the task.
+- Use types (TypeScript/JSDoc) when the project already has them; don’t refactor the whole codebase for types.
+- Add dependencies only when needed; prefer small, well-maintained packages.
+
+## Security & Environment
+
+- Don’t commit API keys or secrets; use env vars and keep `.env` out of git.
+- Validate/sanitize user input when you’re already working in that area.
+
+## React (when editing React/JSX)
+
+- Prefer functional components and hooks when writing new code.
+- Use stable list keys (e.g. id) when you’re already rendering lists.
+- Use semantic HTML and basic a11y when it doesn’t slow the task down.
+
+## Finishing the Task
+
+- Fix linter/type errors only if they would block run/build or the user asked for it; otherwise note them and move on.
+- Match existing project style where practical; don’t rewrite working code for style alone.
+- Prefer getting a working solution first; refine later if needed.
