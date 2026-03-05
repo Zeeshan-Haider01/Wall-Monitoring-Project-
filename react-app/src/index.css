@@ -1,8 +1,17 @@
+:root {
+  --mw-bg: #0f172a;
+  --mw-panel-bg: #1e293b;
+  --mw-tile-bg: #1a1d24;
+  --mw-tile-border: #2d323c;
+  --mw-accent: #0ea5e9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
-  display: flex;
-  place-items: center;
-  justify-content: center;
-  font-family: system-ui, sans-serif;
+  font-family: system-ui, -apple-system, sans-serif;
 }

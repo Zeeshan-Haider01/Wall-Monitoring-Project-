@@ -1,9 +1,9 @@
-import { HelloWorld } from '../components'
+import { MonitoringWall } from '../components/monitoring-wall'
 
 function HomePage() {
   return (
     <main>
-      <HelloWorld />
+      <MonitoringWall />
     </main>
   )
 }
