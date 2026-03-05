@@ -32,7 +32,11 @@ React Compiler
 The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see this documentation.
 
 Architecture notes
+
 State: One React context + useReducer for layout index, tile→camera assignments, per-camera status overrides, alert list, and fullscreen tile. No Redux.
+
 Simulations: useMonitoringWallSimulations() runs inside the grid; it sets timeouts/intervals and dispatches to context so only relevant tiles re-render when status or alerts change.
+
 Separation: Mock data in data/, context in context/, simulations in hooks/, UI in components/monitoring-wall/. CameraTile is memoized to limit re-renders.
+
 Performance: Up to 16 tiles; context updates only when layout, assignments, statuses, or alerts change. Alert list is trimmed to the last 50 entries.
